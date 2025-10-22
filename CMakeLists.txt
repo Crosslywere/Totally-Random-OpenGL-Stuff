@@ -15,6 +15,7 @@ target_include_directories(TROGS PRIVATE
   header/
   dependencies/glfw/include/
   dependencies/glad/include/
+  dependencies/glm/
 )
 target_precompile_headers(TROGS PRIVATE
   src/pch.hpp
