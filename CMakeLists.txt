@@ -12,7 +12,7 @@ add_executable(TROGS
   src/pch.cpp
 )
 target_include_directories(TROGS PRIVATE
-  src/
+  header/
   dependencies/glfw/include/
   dependencies/glad/include/
 )
