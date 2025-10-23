@@ -10,6 +10,7 @@ set(CXX_STANDARD_REQUIRED ON)
 add_executable(TROGS
   src/main.cpp
   src/pch.cpp
+  src/window.cpp
 )
 target_include_directories(TROGS PRIVATE
   header/
@@ -23,6 +24,7 @@ target_precompile_headers(TROGS PRIVATE
 target_sources(TROGS PRIVATE
   src/pch.cpp
 )
+set_source_files_properties(src/main.cpp PROPERTIES SKIP_PRECOMPILE_HEADERS YES)
 
 target_link_libraries(TROGS PRIVATE
   glfw
