@@ -11,12 +11,14 @@ add_executable(TROGS
   src/main.cpp
   src/pch.cpp
   src/window.cpp
+  src/stb_impl.cpp
 )
 target_include_directories(TROGS PRIVATE
   header/
   dependencies/glfw/include/
   dependencies/glad/include/
   dependencies/glm/
+  dependencies/stb/
 )
 target_precompile_headers(TROGS PRIVATE
   src/pch.hpp
